@@ -179,17 +179,6 @@ header {
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 30px 20px;
-    .logo {
-      img {
-        width: 100px;
-      }
-    }
-  }
-}
-
 #mobileView {
   display: none;
 }
@@ -200,6 +189,83 @@ ul,
 li,
 h3 {
   -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 932px) {
+  header {
+    padding: 20px 20px;
+  }
+  .links {
+    ul {
+      gap: 15px;
+      li {
+        a {
+          font-size: 12px;
+        }
+        #account {
+          width: 20px;
+        }
+        #btn {
+          padding: 3px 10px;
+        }
+        .container {
+          #hover {
+            padding: 10px 0;
+            h3 {
+              font-size: 12px;
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+      .nav {
+        gap: 3px;
+        img {
+          width: 12px;
+        }
+        .dropdown {
+          top: 60px;
+          padding: 25px 25px;
+          grid-gap: 20px;
+          column-gap: 25px;
+          width: 400px;
+          .item {
+            gap: 10px;
+            img {
+              width: 16px;
+            }
+            .item-content {
+              gap: 8px;
+              h3 {
+                font-size: 14px;
+              }
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        #dropdown-2 {
+          width: 220px;
+        }
+        #dropdown-3 {
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 683px) {
+  header {
+    padding: 10px 10px;
+    padding-left: 0 !important;
+  }
+  .links {
+    ul {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 @media (max-width: 480px) {

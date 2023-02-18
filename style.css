@@ -1,1 +1,299 @@
-@import"https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900";@font-face{font-family:"Code Saver";src:url("/fonts/Code Saver Medium.otf")}@font-face{font-family:"Code Saver Regular";src:url("/fonts/Code Saver Regular.otf")}@font-face{font-family:"Code Saver Bold";src:url("/fonts/Code Saver Bold.otf")}*{padding:0;margin:0;box-sizing:border-box}body{font-family:"Code Saver",monospace}a{text-decoration:none}header{display:flex;justify-content:space-between;align-items:center;padding:30px 50px}.logo img{width:130px}.links{display:flex;flex-direction:row}.links ul{list-style:none;display:flex;gap:30px;align-items:center}.links ul li a{text-decoration:none;color:#000;font-size:14px;font-weight:500}.links ul li a:hover{color:#ff41a4}.links ul li #account{width:25px;transform:translateY(3px);filter:drop-shadow(2px 2px 0 #faf77d)}.links ul li #account:hover{transform:translateY(3px) rotate(-5deg)}.links ul li #btn{background-color:#faf77d;border:2px solid #000;padding:4px 16px;border-radius:5px;box-shadow:3px 3px 0px #000;transition:all .1s ease-in-out;cursor:pointer}.links ul li #btn:hover{transform:translate(3px, 3px);box-shadow:1px 1px 0px #000}.links ul li #btn a{font-family:"Code Saver",monospace}.links ul li #btn a:hover{color:#000}.links ul li .container{position:absolute;padding:20px 0 0 0}.links ul li .container #hover{display:flex;flex-direction:column;background-color:#fff;border:1px solid rgba(0,0,0,.1);border-radius:10px;padding:20px 0;display:none}.links ul li .container #hover h3{font-size:14px;padding:5px 15px;color:#01303c}.links ul li .container #hover h3:hover{color:#000;background-color:#faf77d}.links ul li #user:hover #hover{display:flex}.links ul .nav{display:flex;align-items:center;gap:5px}.links ul .nav img{width:15px;transform:translateY(-1.5px)}.links ul .nav #product{position:relative}.links ul .nav .dropdown{position:absolute;top:80px;padding:25px 30px;border:1px solid rgba(0,0,0,.1);display:none;grid-template-columns:repeat(2, 1fr);grid-gap:30px;-moz-column-gap:30px;column-gap:30px;border-radius:10px;width:550px}.links ul .nav .dropdown .item{display:flex;flex-direction:row;align-items:flex-start;gap:12px}.links ul .nav .dropdown .item img{width:24px;filter:drop-shadow(2px 2px 0 #faf77d);transform:translateY(2px)}.links ul .nav .dropdown .item .item-content{display:flex;flex-direction:column;gap:5px}.links ul .nav .dropdown .item .item-content h3{font-family:"Inter",sans-serif;font-size:18px;color:#002f3c}.links ul .nav .dropdown .item .item-content p{font-family:"Inter",sans-serif;font-size:14px;color:#738298;line-height:1.5}.links ul .nav #dropdown-2{width:320px;grid-template-columns:repeat(1, 1fr)}.links ul .nav #dropdown-3{width:320px;grid-template-columns:repeat(1, 1fr)}.links #menu{display:none}@media(max-width: 768px){header{padding:30px 20px}header .logo img{width:100px}}#mobileView{display:none}div,a,ul,li,h3{-webkit-tap-highlight-color:rgba(0,0,0,0)}@media(max-width: 480px){#mobileView{display:none;flex-direction:column;width:100vw;position:fixed;align-items:flex-start;justify-content:flex-start;top:60px;padding:0 30px}#mobileView ul{list-style:none;display:flex;flex-direction:column;gap:10px}#mobileView ul li a{font-family:"Code Saver Bold",monospace;font-size:16px;font-weight:500;color:#000}#mobileView ul li a:hover{color:#ff41a4}#mobileView ul li .mobile_items{margin:5px 0;display:flex;flex-direction:column;padding:0 10px;gap:5px !important}#mobileView ul li .mobile_items li a{font-family:"Code Saver Regular",monospace;font-size:14px;font-weight:500;color:#000}#mobileView ul li .mobile_items li a:hover{color:#ff41a4}header{padding:20px 30px}header .links ul{display:none}header .links #menu{display:block;width:30px;cursor:pointer}}
+@import "https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900";
+@font-face {
+  font-family: "Code Saver";
+  src: url("/fonts/Code Saver Medium.otf");
+}
+@font-face {
+  font-family: "Code Saver Regular";
+  src: url("/fonts/Code Saver Regular.otf");
+}
+@font-face {
+  font-family: "Code Saver Bold";
+  src: url("/fonts/Code Saver Bold.otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Code Saver", monospace;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+.logo img {
+  width: 130px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+}
+.links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.links ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.links ul li a:hover {
+  color: #ff41a4;
+}
+.links ul li #account {
+  width: 25px;
+  transform: translateY(3px);
+  filter: drop-shadow(2px 2px 0 #faf77d);
+}
+.links ul li #account:hover {
+  transform: translateY(3px) rotate(-5deg);
+}
+.links ul li #btn {
+  background-color: #faf77d;
+  border: 2px solid #000;
+  padding: 4px 16px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px #000;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.links ul li #btn:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px #000;
+}
+.links ul li #btn a {
+  font-family: "Code Saver", monospace;
+}
+.links ul li #btn a:hover {
+  color: #000;
+}
+.links ul li .container {
+  position: absolute;
+  padding: 20px 0 0 0;
+}
+.links ul li .container #hover {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 0;
+  display: none;
+}
+.links ul li .container #hover h3 {
+  font-size: 14px;
+  padding: 5px 15px;
+  color: #01303c;
+}
+.links ul li .container #hover h3:hover {
+  color: #000;
+  background-color: #faf77d;
+}
+.links ul li #user:hover #hover {
+  display: flex;
+}
+.links ul .nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.links ul .nav img {
+  width: 15px;
+  transform: translateY(-1.5px);
+}
+.links ul .nav #product {
+  position: relative;
+}
+.links ul .nav .dropdown {
+  position: absolute;
+  top: 80px;
+  padding: 25px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  border-radius: 10px;
+  width: 550px;
+}
+.links ul .nav .dropdown .item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+.links ul .nav .dropdown .item img {
+  width: 24px;
+  filter: drop-shadow(2px 2px 0 #faf77d);
+  transform: translateY(2px);
+}
+.links ul .nav .dropdown .item .item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.links ul .nav .dropdown .item .item-content h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #002f3c;
+}
+.links ul .nav .dropdown .item .item-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #738298;
+  line-height: 1.5;
+}
+.links ul .nav #dropdown-2 {
+  width: 320px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.links ul .nav #dropdown-3 {
+  width: 320px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.links #menu {
+  display: none;
+}
+#mobileView {
+  display: none;
+}
+div,
+a,
+ul,
+li,
+h3 {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@media (max-width: 932px) {
+  header {
+    padding: 20px 20px;
+  }
+  .links ul {
+    gap: 15px;
+  }
+  .links ul li a {
+    font-size: 12px;
+  }
+  .links ul li #account {
+    width: 20px;
+  }
+  .links ul li #btn {
+    padding: 3px 10px;
+  }
+  .links ul li .container #hover {
+    padding: 10px 0;
+  }
+  .links ul li .container #hover h3 {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .links ul .nav {
+    gap: 3px;
+  }
+  .links ul .nav img {
+    width: 12px;
+  }
+  .links ul .nav .dropdown {
+    top: 60px;
+    padding: 25px 25px;
+    grid-gap: 20px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    width: 400px;
+  }
+  .links ul .nav .dropdown .item {
+    gap: 10px;
+  }
+  .links ul .nav .dropdown .item img {
+    width: 16px;
+  }
+  .links ul .nav .dropdown .item .item-content {
+    gap: 8px;
+  }
+  .links ul .nav .dropdown .item .item-content h3 {
+    font-size: 14px;
+  }
+  .links ul .nav .dropdown .item .item-content p {
+    font-size: 10px;
+  }
+  .links ul .nav #dropdown-2 {
+    width: 220px;
+  }
+  .links ul .nav #dropdown-3 {
+    width: 220px;
+  }
+}
+@media (max-width: 683px) {
+  header {
+    padding: 10px 10px;
+    padding-left: 0 !important;
+  }
+  .links ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  #mobileView {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 60px;
+    padding: 0 30px;
+  }
+  #mobileView ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #mobileView ul li a {
+    font-family: "Code Saver Bold", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+  }
+  #mobileView ul li a:hover {
+    color: #ff41a4;
+  }
+  #mobileView ul li .mobile_items {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 5px !important;
+  }
+  #mobileView ul li .mobile_items li a {
+    font-family: "Code Saver Regular", monospace;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+  }
+  #mobileView ul li .mobile_items li a:hover {
+    color: #ff41a4;
+  }
+  header {
+    padding: 20px 30px;
+  }
+  header .links ul {
+    display: none;
+  }
+  header .links #menu {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+}
